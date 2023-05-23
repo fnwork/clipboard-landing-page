@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+main{
+    background-image: url('./images/bg-header-desktop.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+    padding-top: 10%;
+    text-align: center;
+}
+header img{
+    margin-bottom: 2.7rem;
+}
+header h1{
+    font-size: 2.4rem;
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+header p{
+    width: 60%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+}
+.btns{
+    width: 40%;
+    margin: 2.5rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btns button{
+    width: 90%;
+    height: 3.438rem;
+    color: hsl(0, 0%, 100%);
+    font-size: 0.9375rem;
+    font-weight: 600;
+    border-radius: 3.13rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+.btns button:first-child{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 0.313rem 0.625rem 1.25rem hsla(173, 90%, 47%, 0.26);
+}
+.btns button:last-child{
+    background-color:  hsl(233, 100%, 69%);
+    box-shadow: 0.313rem 0.625rem 1.25rem hsla(233, 100%, 69%, 0.26);
+    margin-left: 1.25rem;
+}
+.btns button:hover, .btns button:active{
+    opacity: 90%;
+}
+section{
+    margin: 10% 6%;
+}
+.heading{
+    margin-bottom: 5%;
+    text-align: center;
+}
+.heading h2{
+    font-size: 2.1875rem;
+    font-weight: 600;
+    color: hsl(210, 10%, 33%);
+    margin-bottom: 1.25rem;
+}
+.heading p{
+    font-size: 1.125rem;
+    color: hsl(201, 11%, 66%);
+    line-height: 1.7;
+    width: 58%;
+    margin: 0 auto 2.813rem;   
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    overflow-x: hidden;
+}
+.info img{
+    transform: translateX(-9%);
+}
+.detail{
+    margin-top: 30%;
+}
+.detail div:nth-child(2){
+    margin: 10% 0;
+}
+.detail div h3{
+    color: hsl(210, 10%, 33%);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.detail div p{
+    width: 80%;
+    font-weight: 400;
+    line-height: 1.5;
+    color: hsl(201, 11%, 66%);
+}
+.access-clipboard img{
+    transform: translateX(15%);
+}
+.workflow{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.938rem;
+    text-align: center;
+}
+.workflow .card img{
+    margin-bottom: 1rem;
+}
+.workflow .card h3{
+    color: hsl(210, 10%, 33%);
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+.card p{
+    font-size: 1.125rem;
+    line-height: 1.7;
+    font-weight: 400;
+    color: hsl(201, 11%, 66%);
+}
+.company{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-panel{
+    background: hsl(200, 21%, 92%);
+    padding: 1.88rem 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+.main-panel img{
+    margin: 1.88rem 0;
+    width: 3.13rem;
+    height: 3.13rem;
+}
+ul li{
+    margin-top: 1.563rem;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: hsl(210, 10%, 33%);
+    cursor: pointer;
+}
+a:hover, a:active{
+    color:  hsl(171, 66%, 44%);
+}
+.socials{
+    margin: 2.188rem  0;
+}
+.socials a{
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}
+
+.attribution { 
+    font-size: 0.688rem; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (max-width:375px) {
+    main{
+        background: url('./images/bg-header-mobile.png') no-repeat;
+        padding: 7.5rem 1.25rem;
+    }
+    header h1{
+        font-size: 2rem;
+        margin-bottom: .8rem;
+    }
+    header p{
+        width: 100%;
+        font-size: 1.125rem;
+        line-height: 1.5;
+    }
+    .btns{
+        width: 100%;
+        margin: 2.5rem auto;
+        flex-direction: column;
+    }
+    .btns button:last-child{
+        margin-top: 1.25rem;
+        margin-left: 0;
+    }
+    section{
+        text-align: center;
+        margin: auto 2rem;
+    }
+    .heading h2{
+        margin-bottom: 1.25rem;
+    }
+    .heading p{
+        width: 100%;
+        font-size: 1.06rem;
+        margin-bottom: 2.938rem;
+    }
+    .info{
+        grid-template-columns: 1fr;
+        margin-bottom: 8.13rem;
+    }
+    .detail div h3{
+        margin-bottom: 0.938rem;
+    }
+    .detail div p{
+        width: 100%;
+        margin-bottom: 1.88rem;
+    }
+    .info img, .access-clipboard img{
+        width: 100%;
+        transform: translateX(0);
+    }
+    .access-clipboard{
+        margin-bottom: 8.13rem;
+    }
+    .workflow{
+        grid-template-columns: 1fr;
+        margin: 2.5rem auto 8.13rem;
+    }
+    .card img{
+        margin-bottom: 2.813rem;
+    }
+    .card h3{
+        margin-bottom: 0.75rem;
+    }
+    .card p{
+        margin-bottom: 1.88rem;
+    }
+    .company{
+        flex-direction: column;
+        margin-bottom: 8.13rem;
+    }
+    .company img{
+        margin-bottom: 3.75rem;
+    }
+    footer{
+        margin-top: 8.13rem;
+    }
+    .main-panel{
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .main-panel img{
+        margin: 0 auto; 
+    }
+}
